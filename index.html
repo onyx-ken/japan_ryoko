@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>간단 일정 요약 (9/30 ~ 10/4)</title>
+  <style>
+    :root{
+      --bg:#0b0c0f;          /* 다크 배경 */
+      --card:#14161a;        /* 카드 배경 */
+      --text:#e8eaed;        /* 본문 */
+      --muted:#aab0b6;       /* 보조 텍스트 */
+      --accent:#7cc4ff;      /* 포인트 */
+      --border:#24272c;      /* 경계선 */
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Apple SD Gothic Neo,Malgun Gothic,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    .wrap{max-width:880px;margin:0 auto;padding:20px}
+    header{position:sticky;top:0;background:rgba(11,12,15,.85);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);z-index:10}
+    header .inner{max-width:880px;margin:0 auto;padding:12px 20px;display:flex;gap:10px;align-items:center;justify-content:space-between}
+    header h1{font-size:18px;margin:0;font-weight:700}
+    header .sub{font-size:12px;color:var(--muted)}
+    .note{margin:14px 0 22px;color:var(--muted);font-size:13px}
+    .grid{display:grid;gap:14px}
+    .card{
+      background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px 16px 14px;
+    }
+    .date{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+    .dot{width:8px;height:8px;border-radius:50%;background:var(--accent)}
+    h2{font-size:16px;margin:0}
+    .list{margin:6px 0 0;padding:0 0 0 18px}
+    .list li{margin:6px 0}
+    .pill{display:inline-block;border:1px solid var(--border);padding:3px 8px;border-radius:999px;font-size:12px;color:var(--muted);margin-top:6px}
+    .indent{margin-left:8px;color:var(--muted);font-size:14px}
+    footer{color:var(--muted);font-size:12px;margin:28px 0 8px}
+    /* 모바일 우선 → 큰 화면에서만 살짝 키움 */
+    @media (min-width:700px){
+      header h1{font-size:20px}
+      .grid{grid-template-columns:1fr 1fr}
+      .card{padding:18px}
+      h2{font-size:17px}
+    }
+    @media (min-width:1000px){
+      .grid{grid-template-columns:1fr 1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <h1>🇯🇵 간단 일정 요약 (9/30 ~ 10/4)</h1>
+      <div class="sub">핵심 관광 지역만 정리</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="note">세부 시간표/비고는 생략하고, 날짜별 핵심 지역·스폿만 요약했습니다.</p>
+
+    <section class="grid">
+      <!-- 9/30 -->
+      <article class="card">
+        <div class="date"><span class="dot"></span><h2>9월 30일 (1일차)</h2></div>
+        <ul class="list">
+          <li>오사카 입국 → <strong>혼마치</strong> 숙소 이동</li>
+        </ul>
+        <span class="pill">오사카 · 체크인</span>
+      </article>
+
+      <!-- 10/1 -->
+      <article class="card">
+        <div class="date"><span class="dot"></span><h2>10월 1일 (2일차)</h2></div>
+        <ul class="list">
+          <li><strong>텐포잔</strong> 지역 관광
+            <ul class="list indent">
+              <li>카이유칸(아쿠아리움)</li>
+              <li>산타마리아 크루즈</li>
+              <li>텐포잔 대관람차</li>
+            </ul>
+          </li>
+          <li>저녁 선택지
+            <ul class="list indent">
+              <li><strong>우메다</strong> (공중정원·스카이빌딩·쇼핑)</li>
+              <li><strong>도톤보리</strong> (강변 산책·먹거리)</li>
+              <li><strong>혼마치 주변</strong> (가벼운 산책·휴식)</li>
+            </ul>
+          </li>
+        </ul>
+        <span class="pill">오사카 · 텐포잔/우메다/난바</span>
+      </article>
+
+      <!-- 10/2 -->
+      <article class="card">
+        <div class="date"><span class="dot"></span><h2>10월 2일 (3일차)</h2></div>
+        <ul class="list">
+          <li>오사카 → <strong>교토 이동</strong></li>
+          <li>오전~점심 첫 코스 (택1)
+            <ul class="list indent">
+              <li><strong>우지</strong> (뵤도인·우지강·녹차 카페)</li>
+              <li><strong>아라시야마</strong> (도게츠교·대나무숲 등)</li>
+            </ul>
+          </li>
+          <li>오후~저녁: <strong>기온거리 ↔ 기요미즈데라</strong> 산책</li>
+          <li>교토 숙소 체크인</li>
+        </ul>
+        <span class="pill">교토 · 우지/아라시야마 · 기온/기요미즈데라</span>
+      </article>
+
+      <!-- 10/3 -->
+      <article class="card">
+        <div class="date"><span class="dot"></span><h2>10월 3일 (4일차)</h2></div>
+        <ul class="list">
+          <li>오전: <strong>니조성</strong></li>
+          <li>오후 선택지 (자유 선택)
+            <ul class="list indent">
+              <li><strong>금각사</strong> / <strong>은각사</strong></li>
+              <li><strong>교토 시립 교세라 미술관</strong></li>
+              <li><strong>교토 국립 근대 미술관</strong></li>
+              <li><strong>교토 철도박물관</strong></li>
+              <li><strong>교토 국제만화박물관</strong></li>
+              <li><strong>헤이안 신궁</strong></li>
+              <li><strong>난젠지</strong></li>
+            </ul>
+          </li>
+        </ul>
+        <span class="pill">교토 · 성/사찰 · 미술관</span>
+      </article>
+
+      <!-- 10/4 -->
+      <article class="card">
+        <div class="date"><span class="dot"></span><h2>10월 4일 (5일차)</h2></div>
+        <ul class="list">
+          <li>오전~점심: <strong>나라</strong> (사슴공원 → 도다이지)</li>
+          <li>렌터카 반납 → <strong>KIX</strong> 공항 이동 → 귀국</li>
+        </ul>
+        <span class="pill">나라 · 공항 복귀</span>
+      </article>
+    </section>
+
+    <footer>
+      모바일 가독성을 위해 <code>meta viewport</code>와 간단한 미디어쿼리를 사용했습니다. 필요하면 노션용 Markdown으로도 변환해 드릴게요.
+    </footer>
+  </main>
+</body>
+</html>
